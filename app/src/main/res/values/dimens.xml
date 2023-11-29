@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="font_size_xl">40sp</dimen>
+    <dimen name="font_size_lg">20sp</dimen>
+    <dimen name="font_size_md">16sp</dimen>
+    <dimen name="font_size_xs">12sp</dimen>
+    <dimen name="margin_lg">40dp</dimen>
+    <dimen name="margin_md">20dp</dimen>
+    <dimen name="margin_xs">10dp</dimen>
+    <dimen name="margin_zero">0dp</dimen>
+    <dimen name="size_lg">300dp</dimen>
+    <dimen name="size_lg_half">150dp</dimen>
+    <dimen name="size_md">200dp</dimen>
+    <dimen name="size_md_half">100dp</dimen>
+    <dimen name="edit_text_height">48dp</dimen>
+</resources>

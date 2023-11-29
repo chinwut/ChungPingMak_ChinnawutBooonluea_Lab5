@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ChungPingMak_ChinnawutBooonluea_COMP304Lab5_Ex1</string>
+    <string name="main_creators">Created By Chung Ping Mak &amp; Chinnawut Booonluea</string>
+    <string name="main_course_info">COMP304 Sec003 - Mobile Apps Development</string>
+    <string name="main_app_name">Toronto Landmarks</string>
+    <string name="main_selecting">Please select landmarks type</string>
 </resources>

@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Casa Loma",
+    "type": "Old Buildings",
+    "description": "A Gothic Revival style mansion and garden.",
+    "latitude": 43.6780,
+    "longitude": -79.4094,
+    "image": "casa_loma.jpg"
+  },
+  {
+    "name": "St. Lawrence Market",
+    "type": "Old Buildings",
+    "description": "A major public market building, known for its history.",
+    "latitude": 43.6487,
+    "longitude": -79.3716,
+    "image": "st_lawrence_market.jpg"
+  },
+  {
+    "name": "Distillery District",
+    "type": "Old Buildings",
+    "description": "A historic and entertainment precinct, home to many of Toronto's heritage buildings.",
+    "latitude": 43.6503,
+    "longitude": -79.3596,
+    "image": "distillery_district.jpg"
+  },
+  {
+    "name": "Royal Ontario Museum",
+    "type": "Museums",
+    "description": "Known for its wide range of natural history and world culture exhibits.",
+    "latitude": 43.6677,
+    "longitude": -79.3948,
+    "image": "royal_ontario_museum.jpg"
+  },
+  {
+    "name": "Art Gallery of Ontario",
+    "type": "Museums",
+    "description": "One of the largest art museums in North America.",
+    "latitude": 43.6536,
+    "longitude": -79.3925,
+    "image": "art_gallery_of_ontario.jpg"
+  },
+  {
+    "name": "Bata Shoe Museum",
+    "type": "Museums",
+    "description": "A specialized museum dedicated to the history of footwear.",
+    "latitude": 43.6673,
+    "longitude": -79.4000,
+    "image": "bata_shoe_museum.jpg"
+  },
+  {
+    "name": "High Park",
+    "type": "Parks and Outdoor Spaces",
+    "description": "Toronto's largest public park featuring many hiking trails, sports facilities, a beautiful lakefront, and a zoo.",
+    "latitude": 43.6465,
+    "longitude": -79.4637,
+    "image": "high_park.jpg"
+  },
+  {
+    "name": "Toronto Islands",
+    "type": "Parks and Outdoor Spaces",
+    "description": "A chain of small islands in Lake Ontario, offering beaches, parks, and recreational activities.",
+    "latitude": 43.6205,
+    "longitude": -79.3733,
+    "image": "toronto_islands.jpg"
+  },
+  {
+    "name": "Edwards Gardens",
+    "type": "Parks and Outdoor Spaces",
+    "description": "A former estate garden featuring perennials and roses on the uplands and wildflowers, rhododendrons, and an extensive rockery in the valley.",
+    "latitude": 43.7335,
+    "longitude": -79.3587,
+    "image": "edwards_gardens.jpg"
+  },
+  {
+    "name": "CN Tower",
+    "type": "Modern Architecture",
+    "description": "A renowned tall tower and communications and observation tower.",
+    "latitude": 43.6426,
+    "longitude": -79.3871,
+    "image": "cn_tower.jpg"
+  },
+  {
+    "name": "Rogers Centre",
+    "type": "Modern Architecture",
+    "description": "A multi-purpose stadium with a unique retractable roof.",
+    "latitude": 43.6414,
+    "longitude": -79.3894,
+    "image": "rogers_centre.jpg"
+  },
+  {
+    "name": "Toronto-Dominion Centre",
+    "type": "Modern Architecture",
+    "description": "A landmark complex of skyscrapers in downtown Toronto.",
+    "latitude": 43.6472,
+    "longitude": -79.3803,
+    "image": "toronto_dominion_centre.jpg"
+  },
+  {
+    "name": "The Entertainment District",
+    "type": "Cultural and Entertainment Venues",
+    "description": "Known for theaters and performing arts centers.",
+    "latitude": 43.6460,
+    "longitude": -79.3900,
+    "image": "the_entertainment_district.jpg"
+  },
+  {
+    "name": "Scotiabank Arena",
+    "type": "Cultural and Entertainment Venues",
+    "description": "A multi-purpose indoor arena, home to sports events and concerts.",
+    "latitude": 43.6435,
+    "longitude": -79.3791,
+    "image": "scotiabank_arena.jpg"
+  },
+  {
+    "name": "Harbourfront Centre",
+    "type": "Cultural and Entertainment Venues",
+    "description": "A key cultural organization on the downtown waterfront of Toronto, hosting a variety of arts and cultural events.",
+    "latitude": 43.6382,
+    "longitude": -79.3828,
+    "image": "harbourfront_centre.jpg"
+  },
+  {
+    "name": "University of Toronto",
+    "type": "Educational Institutions",
+    "description": "Known for its historic architecture and a robust collection of libraries and museums.",
+    "latitude": 43.6629,
+    "longitude": -79.3957,
+    "image": "university_of_toronto.jpg"
+  }
+]
