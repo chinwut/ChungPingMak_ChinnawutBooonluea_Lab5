@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:padding="16dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linear_layout_vertical">
+
+    <androidx.appcompat.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/landmarkList"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+        android:id="@+id/landmark_list"
+        style="@style/recycle_view_vertical_zero" />
 
     <Button
-            android:id="@+id/back_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Back" />
+        android:id="@+id/back_button"
+        style="@style/button_default"
+        android:text="@string/back"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 </LinearLayout>

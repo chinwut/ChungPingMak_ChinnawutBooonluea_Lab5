@@ -4,4 +4,18 @@
     <string name="main_course_info">COMP304 Sec003 - Mobile Apps Development</string>
     <string name="main_app_name">Toronto Landmarks</string>
     <string name="main_selecting">Please select landmarks type</string>
+    <string name="old_building">Old Buildings</string>
+    <string name="museum">Museums</string>
+    <string name="park_and_outdoor_spaces">Parks and Outdoor Spaces</string>
+    <string name="modern_architecture">Modern Architecture</string>
+    <string name="cultural_and_entertainment_venues">Cultural and Entertainment Venues</string>
+    <string name="educational_institutions">Educational Institutions</string>
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="back">Back</string>
+    <string name="place_api">Place API to find nearby Restaurants</string>
+    <string name="api_not_found">API key not found</string>
+    <string name="place_not_found">Place not found</string>
+    <string name="restaurant">restaurant</string>
 </resources>

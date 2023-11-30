@@ -5,7 +5,8 @@
     <dimen name="font_size_xs">12sp</dimen>
     <dimen name="margin_lg">40dp</dimen>
     <dimen name="margin_md">20dp</dimen>
-    <dimen name="margin_xs">10dp</dimen>
+    <dimen name="margin_sm">10dp</dimen>
+    <dimen name="margin_xs">4dp</dimen>
     <dimen name="margin_zero">0dp</dimen>
     <dimen name="size_lg">300dp</dimen>
     <dimen name="size_lg_half">150dp</dimen>

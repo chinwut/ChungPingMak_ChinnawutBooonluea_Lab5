@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Base.Theme.ChungPingMak_ChinnawutBooonluea_COMP304Lab5_Ex1" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/orange</item>
     </style>
-    <style name="Theme.ChungPingMak_ChinnawutBooonluea_COMP304Lab5_Ex1"
-           parent="Base.Theme.ChungPingMak_ChinnawutBooonluea_COMP304Lab5_Ex1"/>
+
+    <style name="Theme.ChungPingMak_ChinnawutBooonluea_COMP304Lab5_Ex1" parent="Base.Theme.ChungPingMak_ChinnawutBooonluea_COMP304Lab5_Ex1" />
 </resources>

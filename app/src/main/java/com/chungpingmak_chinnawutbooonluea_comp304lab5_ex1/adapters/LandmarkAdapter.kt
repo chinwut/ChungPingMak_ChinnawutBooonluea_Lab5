@@ -1,8 +1,9 @@
-package com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1
+package com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.models.Landmark
 import com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.databinding.ItemLandmarkBinding
 
 class LandmarkAdapter(
@@ -11,7 +12,8 @@ class LandmarkAdapter(
 ) : RecyclerView.Adapter<LandmarkAdapter.LandmarkViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LandmarkViewHolder {
-        val binding = ItemLandmarkBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemLandmarkBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return LandmarkViewHolder(binding)
     }
 
@@ -22,7 +24,8 @@ class LandmarkAdapter(
 
     override fun getItemCount(): Int = landmarks.size
 
-    inner class LandmarkViewHolder(private val binding: ItemLandmarkBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class LandmarkViewHolder(private val binding: ItemLandmarkBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(landmark: Landmark) {
             binding.landmarkName.text = landmark.name
             binding.landmarkDescription.text = landmark.description
@@ -30,7 +33,8 @@ class LandmarkAdapter(
             val imageResId = itemView.context.resources.getIdentifier(
                 landmark.image.split(".")[0], // removing the file extension
                 "drawable",
-                itemView.context.packageName)
+                itemView.context.packageName
+            )
             if (imageResId != 0) {
                 binding.landmarkImage.setImageResource(imageResId)
             }

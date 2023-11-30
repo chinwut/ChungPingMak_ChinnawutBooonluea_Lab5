@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/card_view_landmark_type">
 
-    <ImageView
-            android:id="@+id/landmarkImage"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"/>
+    <LinearLayout style="@style/linear_layout_vertical">
 
-    <TextView
-            android:id="@+id/landmarkName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
+        <ImageView
+            android:id="@+id/landmark_image"
+            style="@style/card_view_image_landmark_type"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
-            android:textStyle="bold"
-            android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/landmark_name"
+            style="@style/text_heading" />
 
-    <TextView
-            android:id="@+id/landmarkDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/landmark_description"
+            style="@style/text_subheading" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

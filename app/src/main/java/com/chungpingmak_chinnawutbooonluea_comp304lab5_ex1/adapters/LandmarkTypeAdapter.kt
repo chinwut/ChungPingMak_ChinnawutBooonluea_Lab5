@@ -1,17 +1,19 @@
-package com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1
+package com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.databinding.ItemLandmarkTypeBinding
+import com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.models.LandmarkType
 
 class LandmarkTypeAdapter(
-    private val types: List<LandmarkType>, // Use LandmarkType data class
+    private val types: List<LandmarkType>,
     private val onClick: (LandmarkType) -> Unit
 ) : RecyclerView.Adapter<LandmarkTypeAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemLandmarkTypeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            ItemLandmarkTypeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -22,7 +24,8 @@ class LandmarkTypeAdapter(
 
     override fun getItemCount(): Int = types.size
 
-    inner class ViewHolder(private val binding: ItemLandmarkTypeBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(private val binding: ItemLandmarkTypeBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(landmarkType: LandmarkType) {
             binding.typeName.text = landmarkType.name
             binding.landmarkTypeImage.setImageResource(landmarkType.imageResId)

@@ -1,66 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scrollview_default">
 
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+    <LinearLayout style="@style/linear_layout_vertical">
 
         <ImageView
-                android:id="@+id/landmarkImage"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:scaleType="centerCrop"/>
+            android:id="@+id/landmark_image"
+            style="@style/card_view_image_landmark"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
         <TextView
-                android:id="@+id/landmarkName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:textSize="24sp"
-                android:textStyle="bold"/>
+            android:id="@+id/landmark_name"
+            style="@style/text_heading" />
 
         <TextView
-                android:id="@+id/landmarkDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:layout_marginBottom="16dp"/>
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp">
-        <Button
+            android:id="@+id/landmark_description"
+            style="@style/text_subheading" />
+
+        <LinearLayout style="@style/linear_layout_horizontal">
+
+            <Button
+                android:id="@+id/normal_button"
+                style="@style/button_default"
+                android:layout_margin="@dimen/margin_xs"
+                android:layout_weight="1"
+                android:text="@string/normal"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+            <Button
                 android:id="@+id/satellite_button"
                 style="@style/button_default"
-                android:text="Satellite" android:layout_width="185dp"/>
+                android:layout_margin="@dimen/margin_xs"
+                android:layout_weight="1"
+                android:text="@string/satellite"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
-        <Button
+            <Button
                 android:id="@+id/hybrid_button"
                 style="@style/button_default"
-                android:text="Hybrid" android:layout_marginLeft="5dp"/>
-    </LinearLayout>
+                android:layout_margin="@dimen/margin_xs"
+                android:layout_weight="1"
+                android:text="@string/hybrid"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        </LinearLayout>
+
+
         <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_md"
+            android:layout_marginBottom="@dimen/margin_md">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
-                android:layout_height="251dp"
-                android:layout_marginBottom="16dp">
-            <fragment
-                    android:id="@+id/map"
-                    android:name="com.google.android.gms.maps.SupportMapFragment"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
 
         </FrameLayout>
+
         <Button
-                android:text="Back"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/back_button"/>
+            android:id="@+id/place_button"
+            style="@style/button_default"
+            android:text="@string/place_api"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+        <Button
+            android:id="@+id/back_button"
+            style="@style/button_default"
+            android:text="@string/back"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
 
 
     </LinearLayout>

@@ -1,11 +1,15 @@
-package com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1
+package com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.repositories
 
 import android.content.Context
+import com.chungpingmak_chinnawutbooonluea_comp304lab5_ex1.models.Landmark
 import org.json.JSONArray
 import java.io.IOException
 
 class LandmarkRepository(private val context: Context) {
 
+    /**
+     * Returns a list of landmarks.
+     */
     fun getLandmarks(): List<Landmark> {
         val landmarks = mutableListOf<Landmark>()
         val jsonString = loadJSONFromAsset("landmarks.json")
@@ -25,6 +29,9 @@ class LandmarkRepository(private val context: Context) {
         return landmarks
     }
 
+    /**
+     * Loads a JSON file from the assets folder.
+     */
     private fun loadJSONFromAsset(fileName: String): String? {
         return try {
             val inputStream = context.assets.open(fileName)

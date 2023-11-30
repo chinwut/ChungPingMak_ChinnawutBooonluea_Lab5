@@ -1,42 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                   xmlns:tools="http://schemas.android.com/tools"
-                                                   android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
-                                                   tools:context=".MainActivity">
-    <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="16dp">
-        <TextView
-                style="@style/text_heading"
-                android:text="@string/main_app_name" />
-        <ImageView
-                android:id="@+id/logoImageView"
-                style="@style/image_home"
-                android:contentDescription="@string/main_app_name"
-                android:src="@drawable/undraw_01" android:layout_height="125dp"/>
-        <TextView
-                style="@style/text_subheading"
-                android:text="@string/main_selecting" />
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/scrollview_default"
+    tools:context=".activities.MainActivity">
 
+    <LinearLayout style="@style/linear_layout_vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <ImageView
+                android:id="@+id/logo_image_view"
+                style="@style/home_top_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/home_heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView style="@style/home_subheading" />
 
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/landmarkTypeGrid"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp" />
-        <TextView
-                style="@style/text_small"
-                android:text="@string/main_course_info"
-                android:textAlignment="center" />
+            android:id="@+id/landmark_type_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <TextView
-                style="@style/text_small"
-                android:text="@string/main_creators"
-                android:textAlignment="center" />
+            style="@style/text_small"
+            android:text="@string/main_course_info"
+            android:textAlignment="center" />
+
+        <TextView
+            style="@style/text_small"
+            android:layout_marginBottom="@dimen/margin_md"
+            android:text="@string/main_creators"
+            android:textAlignment="center" />
     </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

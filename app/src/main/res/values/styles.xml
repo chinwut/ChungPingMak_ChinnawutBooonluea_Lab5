@@ -4,16 +4,20 @@
     <style name="text_heading">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/orange</item>
         <item name="android:textSize">@dimen/font_size_xl</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:layout_marginTop">@dimen/margin_lg</item>
+        <item name="android:layout_marginStart">@dimen/margin_md</item>
+        <item name="android:layout_marginEnd">@dimen/margin_md</item>
     </style>
 
     <style name="text_heading_inverse">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/font_size_xl</item>
+        <item name="android:textSize">@dimen/font_size_lg</item>
         <item name="android:textStyle">bold</item>
     </style>
 
@@ -22,15 +26,21 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/dark_grey</item>
         <item name="android:textSize">@dimen/font_size_lg</item>
-        <item name="android:layout_marginBottom">@dimen/margin_lg</item>
+        <item name="android:layout_marginTop">@dimen/margin_md</item>
+        <item name="android:layout_marginStart">@dimen/margin_md</item>
+        <item name="android:layout_marginEnd">@dimen/margin_md</item>
+        <item name="android:layout_marginBottom">@dimen/margin_md</item>
     </style>
 
     <style name="text_subheading_inverse">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/gradient_orange</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">@dimen/font_size_lg</item>
-        <item name="android:layout_marginBottom">@dimen/margin_lg</item>
+        <item name="android:textSize">@dimen/font_size_md</item>
+        <item name="android:lines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:padding">@dimen/margin_xs</item>
     </style>
 
     <style name="text_body">
@@ -84,7 +94,7 @@
         <item name="android:textSize">@dimen/font_size_md</item>
         <item name="textAllCaps">false</item>
         <item name="android:background">@drawable/button_default</item>
-        <item name="android:layout_marginBottom">@dimen/margin_md</item>
+        <item name="android:layout_margin">@dimen/margin_md</item>
         <item name="maxWidth">@dimen/size_md</item>
     </style>
 
@@ -122,9 +132,9 @@
 
     <style name="linear_layout_vertical">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:padding">@dimen/margin_md</item>
+        <item name="android:padding">@dimen/margin_zero</item>
     </style>
 
     <style name="linear_layout_horizontal">
@@ -139,6 +149,12 @@
         <item name="android:layout_height">@dimen/size_lg</item>
     </style>
 
+    <style name="recycle_view_vertical_zero">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_zero</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
     <style name="recycle_view_horizontal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/size_lg</item>
@@ -147,7 +163,7 @@
     <style name="scrollview_default">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:padding">@dimen/margin_md</item>
+        <item name="android:padding">@dimen/margin_zero</item>
     </style>
 
     <style name="constraint_layout_default">
@@ -164,27 +180,91 @@
     </style>
 
     <style name="card_view_default">
-        <item name="android:layout_width">@dimen/size_md</item>
-        <item name="android:layout_height">@dimen/size_md</item>
-        <item name="cardCornerRadius">@dimen/size_md_half</item>
-        <item name="cardElevation">@dimen/margin_zero</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_lg_half</item>
+        <item name="cardCornerRadius">@dimen/margin_xs</item>
+        <item name="cardElevation">@dimen/margin_xs</item>
         <item name="cardBackgroundColor">@color/white</item>
-        <item name="android:layout_marginTop">@dimen/margin_md</item>
-        <item name="android:layout_marginBottom">@dimen/margin_md</item>
+        <item name="android:layout_marginTop">@dimen/margin_zero</item>
+        <item name="android:layout_marginBottom">@dimen/margin_sm</item>
+        <item name="android:layout_marginStart">@dimen/margin_xs</item>
+        <item name="android:layout_marginEnd">@dimen/margin_xs</item>
         <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="card_view_landmark_type">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardElevation">@dimen/margin_xs</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/font_size_lg</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="card_view_constraint_layout_default">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
     </style>
 
     <style name="card_view_image_default">
-        <item name="android:layout_width">@dimen/size_md</item>
-        <item name="android:layout_height">@dimen/size_md</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_md_half</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
 
-    <style name="image_home">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@dimen/size_lg</item>
-        <item name="android:layout_gravity">center</item>
+    <style name="card_view_image_landmark_type">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_md</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/bottom_right_radius</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="card_view_image_landmark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_md</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/bottom_right_radius</item>
+        <item name="android:clipToOutline">true</item>
+    </style>
+
+    <style name="home_top_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@drawable/bottom_right_radius</item>
+        <item name="android:clipToOutline">true</item>
+        <item name="android:contentDescription">@string/main_app_name</item>
+        <item name="android:src">@drawable/toronto</item>
+    </style>
+
+    <style name="home_heading">
+        <item name="android:layout_width">@dimen/size_lg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/top_right_radius</item>
+        <item name="android:paddingStart">@dimen/margin_md</item>
+        <item name="android:paddingTop">@dimen/margin_xs</item>
+        <item name="android:paddingBottom">@dimen/margin_xs</item>
+        <item name="android:text">@string/main_app_name</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_xl</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="home_subheading">
+        <item name="android:layout_width">@dimen/size_lg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/margin_md</item>
         <item name="android:layout_marginTop">@dimen/margin_md</item>
         <item name="android:layout_marginBottom">@dimen/margin_md</item>
+        <item name="android:text">@string/main_selecting</item>
+        <item name="android:textSize">@dimen/font_size_lg</item>
+    </style>
+
+    <style name="Theme.MyApp.TransparentStatusBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     </style>
 </resources>
